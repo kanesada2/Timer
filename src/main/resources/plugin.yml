@@ -1,0 +1,32 @@
+name: Timer
+main: com.github.kanesada2.Timer.Timer
+version: 0.0.1
+commands:
+    Timer:
+      description: set count-down timer.
+      aliases: tm
+permissions:
+    Timer.*:
+      description: Gives access to all Timer commands
+      default: op
+      children:
+        Timer.config: true
+        Timer.set: true
+        Timer.join: true
+        Timer.startOthers: true
+        Timer.cancelOthers: true
+    Timer.config:
+      description: Allows you to reload Timer's config
+      default: op
+    Timer.set:
+      description: Allows you to make new timer
+      default: true
+    Timer.join:
+      description: Allows you to join someone's timer
+      default: true
+    Timer.startOthers:
+      description: Allows you to start others timer. 
+      default: op
+    Timer.cancelOthers:
+      description: Allows you to cancel others timer. 
+      default: op

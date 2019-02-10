@@ -1,0 +1,15 @@
+########################################################################
+# Timer's Config                                                       #
+########################################################################
+# The UUID that indicates owner of timer set from console (or command block).
+# The below value is mine.I recommend to change it to yours.
+Default_Owner_UUID: 150299c6-ad64-4ecf-bb5c-ede6702fd5c8
+# The upper limit for the time in "/timer set" commands.
+Max_Time: 3600
+Msg:
+    Timer_Start: START!!!
+    Timer_Finish: TIME IS UP!!!
+# Please check it:https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+Sounds:
+    Timer_Start: ENTITY_WITHER_SPAWN
+    Timer_Finish: ENTITY_WITHER_DEATH
